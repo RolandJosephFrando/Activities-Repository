@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-toolbar>
+   
+    <ion-title>Login Form</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<form ngNativeValidate (submit)="Login($event)">
+  <ion-list>
+    <img src="assets/image/blue-01.jpg" height="150" width="300">
+    <ion-item>
+      <ion-label position="stacked">Username</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    
+    <ion-item>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input required type="Password"></ion-input>
+    </ion-item>
+  </ion-list>
+    <!-- Fill -->
+      <ion-button color="primary" required type="submit" expand="full" shape="round">Log in</ion-button>
+</form>
+</ion-content>
